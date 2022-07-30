@@ -1,0 +1,9 @@
+.mypy_cache/
+.vscode/
+__pycache__/
+build/
+dist/
+env/
+*.egg-info/
+fastcontour/*.cpp
+fastcontour/*.html
