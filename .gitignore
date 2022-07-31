@@ -7,3 +7,4 @@ env/
 *.egg-info/
 fastcontour/*.cpp
 fastcontour/*.html
+fastcontour/*.so
