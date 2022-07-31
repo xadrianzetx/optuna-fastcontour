@@ -103,7 +103,7 @@ cdef vector[int] _set_interpolation_order(vector[Point]& p, int n_points, unsign
         QueueNode* inserted
         QueueNode* queue_head = NULL
 
-    # Offsets -1 and 1 are yaxis, -n_points and n_points are xaxis.
+    # Offsets -1 and 1 are xaxis, -n_points and n_points are yaxis.
     offsets = (-1, 1, -1 * n_points, n_points)
     order.reserve(missing)
     while queued != missing:
