@@ -6,9 +6,20 @@ from setuptools import setup
 from Cython.Build import cythonize
 
 
+def get_version() -> str:
+
+    with open(os.path.join("fastcontour", "__init__.py")) as file:
+        for line in file.readlines():
+            if line.startswith("__version__"):
+                version = line.strip().split(" = ")[1]
+                return version.replace('"', "")
+        else:
+            raise RuntimeError("Didn't manage to find version string.")
+
+
 setup(
     name="fastcontour",
-    version="0.1.0",
+    version=get_version(),
     author="Adrian Zuber",
     url="https://github.com/xadrianzetx/optuna-fastcontour",
     packages=find_packages(exclude=("tests")),
