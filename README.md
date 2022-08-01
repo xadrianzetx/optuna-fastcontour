@@ -1,6 +1,6 @@
 # optuna-fastcontour
 
-A drop-in replacement for `optuna.visualization.matplotlib.plot_contour`, build mostly because I wanted to check out Cython. Still, this implementation about 35% faster than Optuna's master, which itself is fast enough. Algorithm is an adaptation of the one [used by Plotly](https://github.com/plotly/plotly.js/blob/master/src/traces/heatmap/interp2d.js).
+A drop-in replacement for `optuna.visualization.matplotlib.plot_contour`, build mostly because I wanted to check out Cython. Still, this implementation about 35% faster than Optuna's master, which itself is fast enough. Algorithm is an adaptation of the one [used by Plotly](https://github.com/plotly/plotly.js/blob/08f621b04e6b34ba019004038e6537c3ae711d37/src/traces/heatmap/interp2d.js#L30-L54).
 
 ## Installation
 
