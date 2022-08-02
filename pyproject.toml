@@ -13,8 +13,8 @@ exclude = '''
 
 [tool.isort]
 profile = 'black'
-src_paths = ['fastcontour', 'tests']
-skip_glob = ['setup.py']
+src_paths = ['fastcontour', 'tests', 'examples']
+skip_glob = ['env', 'setup.py']
 line_length = 99
 lines_after_imports = 2
 force_single_line = 'True'
