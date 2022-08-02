@@ -1,4 +1,4 @@
-name: `Code format`
+name: 'Code format'
 
 on:
   push:
@@ -32,13 +32,13 @@ jobs:
         pip install .[test]
 
     - name: Black
-      run: black invaders/ --check --diff
+      run: black . --check --diff
     
     - name: Flake8
-      run: flake8 invaders/
+      run: flake8 .
 
     - name: Isort
-      run: isort invaders/ --check --diff
+      run: isort . --check --diff
 
     - name: Mypy
-      run: mypy invaders/
+      run: mypy .
