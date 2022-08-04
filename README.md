@@ -25,3 +25,23 @@ study = optuna.create_study(sampler=sampler)
 study.optimize(objective, n_trials=30)
 fastcontour.plot_contour(study, params=["x", "y"])
 ```
+
+## Test
+
+To run tests locally, first you need to compile extensions:
+
+```
+make build
+```
+
+then, install Python dependencies:
+
+```
+pip install .[test]
+```
+
+and finally, run tests with:
+
+```
+pytest -v
+```
