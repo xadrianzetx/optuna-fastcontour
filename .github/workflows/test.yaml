@@ -33,7 +33,6 @@ jobs:
 
     - name: Install Python dependencies
       run: |
-        make install
         pip install .[test]
 
     - name: Run tests
