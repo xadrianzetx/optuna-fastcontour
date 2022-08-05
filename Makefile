@@ -9,5 +9,5 @@ install:
 	pip install -U .
 
 inspect:
-	cython -a -3 --cplus fastcontour/_interpolation.pyx
-	xdg-open fastcontour/_interpolation.html
+	cython -a -3 --cplus fastcontour/*.pyx
+	ls fastcontour/*.html | xargs -n 1 python -m webbrowser
