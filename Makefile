@@ -1,3 +1,4 @@
+.PHONY: build
 build:
 	pip install wheel numpy Cython
 	python setup.py build_ext --build-lib .

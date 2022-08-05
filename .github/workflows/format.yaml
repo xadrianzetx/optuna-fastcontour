@@ -28,8 +28,7 @@ jobs:
 
     - name: Install Python dependencies
       run: |
-        pip install --upgrade black isort flake8 mypy
-        pip install pytest
+        pip install -U .[dev] .[test]
 
     - name: Black
       run: black . --check --diff
