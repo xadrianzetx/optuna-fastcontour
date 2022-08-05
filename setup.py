@@ -33,6 +33,6 @@ setup(
     ],
     python_requires=">=3.7",
     install_requires=["optuna @ git+https://github.com/optuna/optuna.git", "matplotlib"],
-    extras_require={"test": ["pytest"]},
+    extras_require={"dev": ["black", "isort", "flake8", "mypy"], "test": ["pytest"]},
     include_dirs=[np.get_include()],
 )
