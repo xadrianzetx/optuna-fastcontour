@@ -5,8 +5,7 @@ A drop-in replacement for `optuna.visualization.matplotlib.plot_contour`, build 
 ## Installation
 
 ```
-git clone https://github.com/xadrianzetx/optuna-fastcontour
-cd fastcontour && make install
+pip install git+https://github.com/xadrianzetx/optuna-fastcontour.git
 ```
 
 ## Usage
